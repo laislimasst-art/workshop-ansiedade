@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansiedade e Sobrecarga Emocional | Workshop com Laís Rodrigues, Psicóloga</title>
+  <meta name="description" content="Workshop online para mulheres que vivem sobrecarregadas, ansiosas e cheias de culpa. Conduzido pela psicóloga clínica Laís Rodrigues, com base na Terapia Cognitivo-Comportamental. Vagas limitadas.">
+  <meta name="keywords" content="ansiedade, sobrecarga emocional, workshop online, psicóloga, terapia cognitivo comportamental, culpa, autoestima feminina">
+  <meta name="author" content="Laís Rodrigues - Psicóloga Clínica CRP 05/63116">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ansiedade e Sobrecarga Emocional | Workshop com Laís Rodrigues">
+  <meta property="og:description" content="Um espaço acolhedor e baseado em ciência para mulheres que vivem no automático e querem recuperar o equilíbrio emocional.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- MENU FIXO -->
+  <!-- ============================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">Laís Rodrigues<span>psicóloga</span></a>
+      <nav class="navbar__nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+      <a href="https://wa.me/5521965399283?text=Ol%C3%A1%2C%20La%C3%ADs!%20Vi%20a%20p%C3%A1gina%20do%20workshop%20%22Ansiedade%20e%20Sobrecarga%20Emocional%22%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20para%20garantir%20minha%20vaga."
+         class="btn btn--small navbar__cta" target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- 1. HERO -->
+  <!-- ============================================= -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-shape"></div>
+    <div class="container hero__grid">
+
+      <div class="hero__content reveal">
+        <span class="eyebrow">Workshop online · Vagas limitadas</span>
+        <h1 class="hero__title">Ansiedade e Sobrecarga Emocional</h1>
+        <p class="hero__subtitle">
+          Como parar de viver no automático, diminuir a culpa e recuperar o controle
+          da própria vida — sem precisar dar conta de tudo.
+        </p>
+
+        <a href="https://wa.me/5521965399283?text=Ol%C3%A1%2C%20La%C3%ADs!%20Vi%20a%20p%C3%A1gina%20do%20workshop%20%22Ansiedade%20e%20Sobrecarga%20Emocional%22%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20para%20garantir%20minha%20vaga."
+           class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          Quero garantir minha vaga
+        </a>
+
+        <div class="hero__info">
+          <div class="info-pill"><i class="fa-solid fa-video" aria-hidden="true"></i> Online · Google Meet</div>
+          <div class="info-pill"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 25 de julho</div>
+          <div class="info-pill"><i class="fa-regular fa-clock" aria-hidden="true"></i> 09h · 1h30</div>
+          <div class="info-pill"><i class="fa-regular fa-user" aria-hidden="true"></i> 20 vagas</div>
+        </div>
+
+        <!-- Contador regressivo -->
+        <div class="countdown" id="countdown" aria-label="Contagem regressiva para o workshop">
+          <div class="countdown__item">
+            <span class="countdown__number" id="cd-days">00</span>
+            <span class="countdown__label">dias</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__number" id="cd-hours">00</span>
+            <span class="countdown__label">horas</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__number" id="cd-minutes">00</span>
+            <span class="countdown__label">min</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__number" id="cd-seconds">00</span>
+            <span class="countdown__label">seg</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__photo-wrap reveal">
+        <div class="hero__photo-frame">
+          <!-- INSERIR FOTO PROFISSIONAL DA PSICÓLOGA AQUI -->
+          <img src="assets/foto-lais.jpg" alt="Laís Rodrigues, psicóloga clínica" class="hero__photo">
+        </div>
+        <div class="hero__photo-badge">
+          <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+          <span>Psicóloga há 9 anos</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 2. IDENTIFICAÇÃO -->
+  <!-- ============================================= -->
+  <section class="identify">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Talvez isso faça sentido pra você</span>
+        <h2>Você já se sentiu assim?</h2>
+      </div>
+
+      <div class="identify__grid">
+        <p class="identify__line reveal">Você acorda já pensando em tudo o que precisa dar conta.</p>
+        <p class="identify__line reveal">Sua mente não desliga, mesmo quando o corpo pede descanso.</p>
+        <p class="identify__line reveal">Descansar vem acompanhado de uma culpa que você não sabe explicar.</p>
+        <p class="identify__line reveal">Você se cobra por coisas que, para os outros, passariam despercebidas.</p>
+        <p class="identify__line reveal">Carrega o peso emocional de quem está ao seu redor, mesmo sem pedir.</p>
+        <p class="identify__line reveal">Dizer "não" parece, de alguma forma, um ato de egoísmo.</p>
+        <p class="identify__line reveal">Vive priorizando todo mundo — e, sem perceber, se esqueceu de si mesma.</p>
+      </div>
+
+      <p class="identify__closing reveal">
+        Se algo disso ressoou em você, saiba: isso tem nome, tem explicação
+        e, principalmente, tem caminho.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 3. PROMESSA -->
+  <!-- ============================================= -->
+  <section class="promise">
+    <div class="container promise__grid">
+      <div class="promise__visual reveal" aria-hidden="true">
+        <div class="promise__circle promise__circle--1"></div>
+        <div class="promise__circle promise__circle--2"></div>
+        <div class="promise__circle promise__circle--3"></div>
+      </div>
+      <div class="promise__text reveal">
+        <span class="eyebrow">Um caminho possível</span>
+        <h2>Você não precisa continuar vivendo no automático para dar conta de tudo</h2>
+        <p>
+          Neste workshop, você vai entender como a ansiedade, a culpa e a sobrecarga
+          emocional se alimentam dos mesmos padrões — e vai conhecer estratégias práticas,
+          baseadas na Terapia Cognitivo-Comportamental, para recuperar seu equilíbrio
+          emocional sem deixar de cuidar de quem você ama.
+        </p>
+        <p class="promise__note">
+          Um encontro construído com escuta, ciência e respeito ao seu tempo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 4. O QUE VOCÊ VAI APRENDER -->
+  <!-- ============================================= -->
+  <section class="learn" id="conteudo">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Conteúdo do encontro</span>
+        <h2>O que você vai aprender</h2>
+      </div>
+
+      <div class="learn__grid">
+        <div class="learn-card reveal">
+          <div class="learn-card__icon"><i class="fa-solid fa-wind" aria-hidden="true"></i></div>
+          <h3>Ansiedade além dos sintomas</h3>
+          <p>Entenda o que realmente acontece por trás da ansiedade do dia a dia.</p>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-card__icon"><i class="fa-solid fa-heart-crack" aria-hidden="true"></i></div>
+          <h3>A armadilha da culpa</h3>
+          <p>Como a culpa se instala e passa a comandar suas escolhas sem você perceber.</p>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-card__icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+          <h3>Sobrecarga emocional</h3>
+          <p>Reconheça os sinais de um acúmulo que vai muito além do cansaço físico.</p>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-card__icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+          <h3>Pensamentos automáticos</h3>
+          <p>Identifique os padrões de pensamento que alimentam a sua sobrecarga.</p>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-card__icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+          <h3>Autocobrança</h3>
+          <p>Compreenda a origem da exigência excessiva consigo mesma — e como suavizá-la.</p>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-card__icon"><i class="fa-solid fa-hands-holding-circle" aria-hidden="true"></i></div>
+          <h3>Responsabilidade emocional</h3>
+          <p>Aprenda a diferenciar cuidado de sobrecarga pelo bem-estar alheio.</p>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-card__icon"><i class="fa-solid fa-hand" aria-hidden="true"></i></div>
+          <h3>Limites saudáveis</h3>
+          <p>Descubra como estabelecer limites sem culpa e sem romper vínculos importantes.</p>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-card__icon"><i class="fa-solid fa-toolbox" aria-hidden="true"></i></div>
+          <h3>Ferramentas práticas de TCC</h3>
+          <p>Leve consigo recursos concretos, baseados em evidência, para aplicar no cotidiano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 5. TRANSFORMAÇÕES -->
+  <!-- ============================================= -->
+  <section class="shift">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Um novo lugar para estar</span>
+        <h2>De um jeito de viver para outro</h2>
+      </div>
+
+      <div class="shift__grid">
+        <div class="shift__col shift__col--before reveal">
+          <h3>Hoje</h3>
+          <ul>
+            <li><i class="fa-solid fa-minus" aria-hidden="true"></i> Vive cansada</li>
+            <li><i class="fa-solid fa-minus" aria-hidden="true"></i> Mente acelerada</li>
+            <li><i class="fa-solid fa-minus" aria-hidden="true"></i> Culpa constante</li>
+            <li><i class="fa-solid fa-minus" aria-hidden="true"></i> Vive no automático</li>
+            <li><i class="fa-solid fa-minus" aria-hidden="true"></i> Não consegue descansar</li>
+            <li><i class="fa-solid fa-minus" aria-hidden="true"></i> Sempre coloca todos em primeiro lugar</li>
+          </ul>
+        </div>
+
+        <div class="shift__arrow reveal" aria-hidden="true">
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+
+        <div class="shift__col shift__col--after reveal">
+          <h3>É possível construir</h3>
+          <ul>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mais consciência emocional</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mais clareza</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mais equilíbrio</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Menos culpa</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mais segurança</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mais leveza</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 6 e 7. PARA QUEM É / NÃO É -->
+  <!-- ============================================= -->
+  <section class="audience">
+    <div class="container audience__grid">
+      <div class="audience__card reveal">
+        <h3><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Este workshop é para você que</h3>
+        <ul>
+          <li>Sente que vive sobrecarregada emocionalmente</li>
+          <li>Quer entender melhor sua ansiedade</li>
+          <li>Deseja lidar com a culpa de forma mais leve</li>
+          <li>Busca aprender a estabelecer limites</li>
+          <li>Quer se conhecer com base em ciência, não em fórmulas prontas</li>
+          <li>Está disposta a experimentar pequenas mudanças reais</li>
+        </ul>
+      </div>
+
+      <div class="audience__card audience__card--not reveal">
+        <h3><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Este workshop não é para quem</h3>
+        <ul>
+          <li>Procura soluções milagrosas ou promessas de cura</li>
+          <li>Não pretende colocar o conteúdo em prática</li>
+          <li>Espera que o workshop substitua um processo de psicoterapia</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 8. SOBRE A PSICÓLOGA -->
+  <!-- ============================================= -->
+  <section class="about" id="sobre">
+    <div class="container about__grid">
+      <div class="about__photo reveal">
+        <img src="assets/foto-lais-sobre.jpg" alt="Laís Rodrigues em atendimento" class="about__img">
+      </div>
+      <div class="about__text reveal">
+        <span class="eyebrow">Quem vai conduzir o encontro</span>
+        <h2>Laís Rodrigues</h2>
+        <p class="about__crp">Psicóloga Clínica · CRP 05/63116</p>
+
+        <p>
+          Psicóloga há 9 anos, Laís Rodrigues atua ajudando mulheres a compreenderem seus
+          padrões emocionais e desenvolverem uma relação mais saudável consigo mesmas.
+          É especialista em Terapia Cognitivo-Comportamental (TCC), Psicologia Clínica,
+          Psicologia do Trabalho e Qualidade de Vida, e atualmente está concluindo sua
+          pós-graduação em Neuropsicologia.
+        </p>
+        <p>
+          No consultório, atua diariamente ao lado de mulheres que convivem com ansiedade,
+          culpa, baixa autoestima, sobrecarga emocional e autocobrança.  Além dos atendimentos individuais,
+          possui experiência na condução de grupos, palestras e processos de desenvolvimento
+          humano. Essa trajetória fortaleceu sua capacidade de acolher diferentes histórias, 
+          facilitar reflexões e conduzir grupos com sensibilidade, organização e profundidade.
+        </p>
+        <p>
+          Este workshop nasce dessa experiência: um espaço pensado para que você se sinta
+          compreendida — e saia dele com clareza sobre os primeiros passos possíveis.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 9. CREDIBILIDADE -->
+  <!-- ============================================= -->
+  <section class="credibility">
+    <div class="container">
+      <div class="credibility__grid">
+        <div class="credibility__card reveal">
+          <i class="fa-solid fa-award" aria-hidden="true"></i>
+          <span>9 anos de atualização e crescimento profissional em Psicologia</span>
+        </div>
+        <div class="credibility__card reveal">
+          <i class="fa-solid fa-brain" aria-hidden="true"></i>
+          <span>Especialista em Terapia Cognitivo-Comportamental</span>
+        </div>
+        <div class="credibility__card reveal">
+          <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+          <span>Especialista em Psicologia Clínica</span>
+        </div>
+        <div class="credibility__card reveal">
+          <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+          <span>Especialista em Psicologia do Trabalho</span>
+        </div>
+        <div class="credibility__card reveal">
+          <i class="fa-solid fa-spa" aria-hidden="true"></i>
+          <span>Especialista em Qualidade de Vida</span>
+        </div>
+        <div class="credibility__card reveal">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          <span>Pós-graduação em Neuropsicologia (em conclusão)</span>
+        </div>
+        <div class="credibility__card reveal">
+          <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+          <span>Experiência com grupos e desenvolvimento humano</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 10. BÔNUS -->
+  <!-- ============================================= -->
+  <section class="bonus">
+    <div class="container bonus__inner reveal">
+      <div class="bonus__icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+      <span class="eyebrow">Um cuidado a mais</span>
+      <h2>Grupo exclusivo de preparação</h2>
+      <p>
+        Após confirmar sua inscrição, você terá acesso a um grupo exclusivo no WhatsApp,
+        onde compartilharemos conteúdos preparatórios até a data do workshop — materiais
+        sobre ansiedade, autoestima, sobrecarga emocional, autocuidado e ferramentas
+        práticas, para ampliar sua experiência de aprendizagem antes mesmo do encontro.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 11. FAQ -->
+  <!-- ============================================= -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Ainda com dúvidas?</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            Preciso abrir a câmera?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Não é obrigatório. O mais importante é que você esteja presente e à vontade durante o encontro.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            Vai ficar gravado?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>O workshop é ao vivo. Detalhes sobre gravação e acesso posterior serão informados no grupo do WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            É terapia em grupo?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Não. É um encontro educativo e reflexivo, com base em ciência, e não substitui um processo de psicoterapia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            Receberei certificado?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Sim, todas as participantes recebem certificado de participação ao final do workshop.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            Posso participar mesmo fazendo terapia?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Com certeza. O workshop pode complementar seu processo terapêutico atual, trazendo novas reflexões.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            Nunca fiz terapia. Posso participar?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Sim. O workshop foi pensado para acolher qualquer mulher que se identifique com os temas propostos, independentemente de já ter feito terapia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 12. CHAMADA FINAL -->
+  <!-- ============================================= -->
+  <section class="final-cta">
+    <div class="container final-cta__inner reveal">
+      <h2>Você não precisa continuar carregando tudo sozinha</h2>
+      <p>Restam poucas vagas para este encontro. Reserve um tempo para cuidar de você.Ainda está em dúvida? Clique no botão abaixo. Eu mesma vou responder sua mensagem e explicar como funciona o workshop, sem compromisso.</p>
+      <a href="https://wa.me/5521965399283?text=Ol%C3%A1%2C%20La%C3%ADs!%20Vi%20a%20p%C3%A1gina%20do%20workshop%20%22Ansiedade%20e%20Sobrecarga%20Emocional%22%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20para%20garantir%20minha%20vaga."
+         class="btn btn--primary btn--large" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        Quero garantir minha vaga
+      </a>
+      <span class="final-cta__note">20 vagas disponíveis · 25 de julho às 09h</span>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- RODAPÉ -->
+  <!-- ============================================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Laís Rodrigues · Psicóloga Clínica · CRP 05/63116</p>
+      <p>Atendimento online · Todos os direitos reservados © 2026</p>
+    </div>
+  </footer>
+
+  <!-- ============================================= -->
+  <!-- BOTÃO WHATSAPP FLUTUANTE -->
+  <!-- ============================================= -->
+  <a href="https://wa.me/5521965399283?text=Ol%C3%A1%2C%20La%C3%ADs!%20Vi%20a%20p%C3%A1gina%20do%20workshop%20%22Ansiedade%20e%20Sobrecarga%20Emocional%22%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20para%20garantir%20minha%20vaga."
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <span class="whatsapp-float__tooltip">Fale comigo pelo WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
